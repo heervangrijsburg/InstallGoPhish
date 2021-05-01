@@ -1,5 +1,5 @@
 mkdir github
-cd ~/github || exit
+cd github || exit
 sudo apt install curl
 versionWithHTML=$(curl -s https://github.com/gophish/gophish/releases/ | grep -m 1 linux-64bit.zip)
 versionWithHTML=${versionWithHTML//$'<td>'/}
